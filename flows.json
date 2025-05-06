@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "7c34d19e242665f0",
+        "type": "tab",
+        "label": "Flujo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
@@ -125,5 +133,71 @@
         "x": 680,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "87e120e81fa39b09",
+        "type": "ui_text",
+        "z": "7c34d19e242665f0",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000",
+        "x": 310,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f4a24f57cea70812",
+        "type": "debug",
+        "z": "7c34d19e242665f0",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "bed83d47accf2386",
+        "type": "inject",
+        "z": "7c34d19e242665f0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "87e120e81fa39b09",
+                "f4a24f57cea70812"
+            ]
+        ]
     }
 ]
