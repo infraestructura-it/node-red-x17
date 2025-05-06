@@ -96,6 +96,14 @@
         "env": []
     },
     {
+        "id": "5fbdc0202933dab6",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "8796f2781bbb0b75",
         "type": "subflow",
         "name": "Subflow 1",
@@ -223,26 +231,6 @@
         "wires": []
     },
     {
-        "id": "87e120e81fa39b09",
-        "type": "ui_text",
-        "z": "7c34d19e242665f0",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000",
-        "x": 130,
-        "y": 300,
-        "wires": []
-    },
-    {
         "id": "f4a24f57cea70812",
         "type": "debug",
         "z": "7c34d19e242665f0",
@@ -301,6 +289,26 @@
         "wires": []
     },
     {
+        "id": "87e120e81fa39b09",
+        "type": "ui_text",
+        "z": "7c34d19e242665f0",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000",
+        "x": 130,
+        "y": 300,
+        "wires": []
+    },
+    {
         "id": "4cd65e4a1c24c502",
         "type": "complete",
         "z": "925440bb74efb37d",
@@ -347,65 +355,6 @@
         "x": 360,
         "y": 300,
         "wires": []
-    },
-    {
-        "id": "b1f984bd8914a24d",
-        "type": "ui_button",
-        "z": "5cd1c01a85f71d88",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 90,
-        "y": 140,
-        "wires": [
-            [
-                "0a50df3050e72943",
-                "20af767a5a9d9277",
-                "878f50f2122751d5",
-                "0d5f80cf1b9a1250"
-            ]
-        ]
-    },
-    {
-        "id": "0a50df3050e72943",
-        "type": "ui_dropdown",
-        "z": "5cd1c01a85f71d88",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "place": "Select option",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "value": "",
-                "label": ""
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 340,
-        "y": 140,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "20af767a5a9d9277",
@@ -467,6 +416,65 @@
         "y": 300,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "0a50df3050e72943",
+        "type": "ui_dropdown",
+        "z": "5cd1c01a85f71d88",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "value": "",
+                "label": ""
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1f984bd8914a24d",
+        "type": "ui_button",
+        "z": "5cd1c01a85f71d88",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "0a50df3050e72943",
+                "20af767a5a9d9277",
+                "878f50f2122751d5",
+                "0d5f80cf1b9a1250"
+            ]
         ]
     },
     {
@@ -629,24 +637,6 @@
         "wires": []
     },
     {
-        "id": "7ee8e1e52278f9dc",
-        "type": "ping",
-        "z": "fae247ce8162e6b8",
-        "protocol": "Automatic",
-        "mode": "timed",
-        "name": "",
-        "host": "",
-        "timer": "20",
-        "inputs": 0,
-        "x": 110,
-        "y": 140,
-        "wires": [
-            [
-                "2835a2dd4d2351db"
-            ]
-        ]
-    },
-    {
         "id": "2835a2dd4d2351db",
         "type": "ui_chart",
         "z": "fae247ce8162e6b8",
@@ -687,6 +677,24 @@
         "y": 120,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "7ee8e1e52278f9dc",
+        "type": "ping",
+        "z": "fae247ce8162e6b8",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "",
+        "host": "",
+        "timer": "20",
+        "inputs": 0,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "2835a2dd4d2351db"
+            ]
         ]
     },
     {
@@ -851,28 +859,6 @@
         ]
     },
     {
-        "id": "2de7a55a0a3df47a",
-        "type": "Tasmota Switch",
-        "z": "9dd657db2e52dc61",
-        "broker": "",
-        "device": "",
-        "name": "",
-        "outputs": 1,
-        "uidisabler": false,
-        "fullTopic": "",
-        "cmndPrefix": "",
-        "statPrefix": "",
-        "telePrefix": "",
-        "qos": "1",
-        "retain": "false",
-        "notopic": false,
-        "x": 480,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "184d8710f3ab147c",
         "type": "Tasmota Sensor",
         "z": "9dd657db2e52dc61",
@@ -891,6 +877,28 @@
         "outputTopic": "",
         "x": 480,
         "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2de7a55a0a3df47a",
+        "type": "Tasmota Switch",
+        "z": "9dd657db2e52dc61",
+        "broker": "",
+        "device": "",
+        "name": "",
+        "outputs": 1,
+        "uidisabler": false,
+        "fullTopic": "",
+        "cmndPrefix": "",
+        "statPrefix": "",
+        "telePrefix": "",
+        "qos": "1",
+        "retain": "false",
+        "notopic": false,
+        "x": 480,
+        "y": 160,
         "wires": [
             []
         ]
@@ -920,5 +928,109 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "24abec2fb445a05d",
+        "type": "ui_template",
+        "z": "5fbdc0202933dab6",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 460,
+        "y": 200,
+        "wires": [
+            [
+                "b38520b20d176c70"
+            ]
+        ]
+    },
+    {
+        "id": "b38520b20d176c70",
+        "type": "ui_text",
+        "z": "5fbdc0202933dab6",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000",
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ae5bfe08f75df850",
+        "type": "ui_chart",
+        "z": "5fbdc0202933dab6",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1F77B4",
+            "#AEC7E8",
+            "#FF7F0E",
+            "#2CA02C",
+            "#98DF8A",
+            "#D62728",
+            "#FF9896",
+            "#9467BD",
+            "#C5B0D5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a72e273ca721c0e",
+        "type": "ui_toast",
+        "z": "5fbdc0202933dab6",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 810,
+        "y": 40,
+        "wires": []
     }
 ]
