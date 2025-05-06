@@ -24,6 +24,14 @@
         "env": []
     },
     {
+        "id": "5cd1c01a85f71d88",
+        "type": "tab",
+        "label": "Flujo 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
@@ -267,5 +275,151 @@
         "x": 360,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "b1f984bd8914a24d",
+        "type": "ui_button",
+        "z": "5cd1c01a85f71d88",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "0a50df3050e72943",
+                "20af767a5a9d9277",
+                "878f50f2122751d5",
+                "0d5f80cf1b9a1250"
+            ]
+        ]
+    },
+    {
+        "id": "0a50df3050e72943",
+        "type": "ui_dropdown",
+        "z": "5cd1c01a85f71d88",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "value": "",
+                "label": ""
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20af767a5a9d9277",
+        "type": "ui_switch",
+        "z": "5cd1c01a85f71d88",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": true,
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": false,
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "878f50f2122751d5",
+        "type": "ui_switch",
+        "z": "5cd1c01a85f71d88",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": true,
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": false,
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 250,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d5f80cf1b9a1250",
+        "type": "ui_numeric",
+        "z": "5cd1c01a85f71d88",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 360,
+        "y": 340,
+        "wires": [
+            []
+        ]
     }
 ]
