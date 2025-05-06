@@ -849,5 +849,76 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "2de7a55a0a3df47a",
+        "type": "Tasmota Switch",
+        "z": "9dd657db2e52dc61",
+        "broker": "",
+        "device": "",
+        "name": "",
+        "outputs": 1,
+        "uidisabler": false,
+        "fullTopic": "",
+        "cmndPrefix": "",
+        "statPrefix": "",
+        "telePrefix": "",
+        "qos": "1",
+        "retain": "false",
+        "notopic": false,
+        "x": 480,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "184d8710f3ab147c",
+        "type": "Tasmota Sensor",
+        "z": "9dd657db2e52dc61",
+        "broker": "",
+        "device": "",
+        "name": "",
+        "outputs": 1,
+        "uidisabler": false,
+        "fullTopic": "",
+        "cmndPrefix": "",
+        "statPrefix": "",
+        "telePrefix": "",
+        "qos": "1",
+        "retain": "false",
+        "rules": [],
+        "outputTopic": "",
+        "x": 480,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb87aa4dce6b53ef",
+        "type": "Tasmota Light",
+        "z": "9dd657db2e52dc61",
+        "broker": "",
+        "device": "",
+        "name": "",
+        "outputs": 1,
+        "uidisabler": false,
+        "fullTopic": "",
+        "cmndPrefix": "",
+        "statPrefix": "",
+        "telePrefix": "",
+        "qos": "1",
+        "retain": "false",
+        "havedimmer": true,
+        "havetemp": false,
+        "havecolors": false,
+        "tempformat": "K",
+        "colorsformat": "HSB",
+        "x": 480,
+        "y": 300,
+        "wires": [
+            []
+        ]
     }
 ]
