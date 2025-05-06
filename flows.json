@@ -32,6 +32,14 @@
         "env": []
     },
     {
+        "id": "820c1619860ffbb8",
+        "type": "tab",
+        "label": "Flujo 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
@@ -418,6 +426,54 @@
         "className": "",
         "x": 360,
         "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd3d70c98015f365",
+        "type": "watch",
+        "z": "820c1619860ffbb8",
+        "name": "",
+        "files": "",
+        "recursive": "",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bae19bb82e335dff",
+        "type": "file in",
+        "z": "820c1619860ffbb8",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 390,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ff8f331a3840b25",
+        "type": "file",
+        "z": "820c1619860ffbb8",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 300,
+        "y": 200,
         "wires": [
             []
         ]
