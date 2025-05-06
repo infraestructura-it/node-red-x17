@@ -150,8 +150,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000",
-        "x": 310,
-        "y": 100,
+        "x": 130,
+        "y": 300,
         "wires": []
     },
     {
@@ -196,8 +196,20 @@
         "wires": [
             [
                 "87e120e81fa39b09",
-                "f4a24f57cea70812"
+                "f4a24f57cea70812",
+                "dee7eac2bfc6b0b8"
             ]
         ]
+    },
+    {
+        "id": "dee7eac2bfc6b0b8",
+        "type": "link out",
+        "z": "7c34d19e242665f0",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [],
+        "x": 435,
+        "y": 60,
+        "wires": []
     }
 ]
