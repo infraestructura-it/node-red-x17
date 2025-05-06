@@ -40,6 +40,14 @@
         "env": []
     },
     {
+        "id": "af75c9ed0ca94ea2",
+        "type": "tab",
+        "label": "Flujo 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
@@ -477,5 +485,46 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "389a1370a1b96e17",
+        "type": "status",
+        "z": "af75c9ed0ca94ea2",
+        "name": "",
+        "scope": null,
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "b29f9a0f9c146f47"
+            ]
+        ]
+    },
+    {
+        "id": "b29f9a0f9c146f47",
+        "type": "link call",
+        "z": "af75c9ed0ca94ea2",
+        "name": "",
+        "links": [],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "073cb8f5ca6eba12"
+            ]
+        ]
+    },
+    {
+        "id": "073cb8f5ca6eba12",
+        "type": "link out",
+        "z": "af75c9ed0ca94ea2",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [],
+        "x": 465,
+        "y": 220,
+        "wires": []
     }
 ]
