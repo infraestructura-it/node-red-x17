@@ -88,6 +88,14 @@
         "env": []
     },
     {
+        "id": "9dd657db2e52dc61",
+        "type": "tab",
+        "label": "Flujo 12",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "8796f2781bbb0b75",
         "type": "subflow",
         "name": "Subflow 1",
@@ -822,6 +830,21 @@
         "templateScope": "local",
         "className": "",
         "x": 420,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab92ad8962391e10",
+        "type": "color",
+        "z": "9dd657db2e52dc61",
+        "property": "color",
+        "color": "#9d5353",
+        "val": "0000",
+        "white": false,
+        "name": "",
+        "x": 270,
         "y": 160,
         "wires": [
             []
