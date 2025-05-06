@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "925440bb74efb37d",
+        "type": "tab",
+        "label": "Flujo 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
@@ -210,6 +218,54 @@
         "links": [],
         "x": 435,
         "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4cd65e4a1c24c502",
+        "type": "complete",
+        "z": "925440bb74efb37d",
+        "name": "",
+        "scope": [],
+        "uncaught": false,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "202169a195cefaf5",
+        "type": "catch",
+        "z": "925440bb74efb37d",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 210,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88adb9515d6bcde6",
+        "type": "link in",
+        "z": "925440bb74efb37d",
+        "name": "link in 1",
+        "links": [],
+        "x": 435,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b5f4b57fc818e6f",
+        "type": "comment",
+        "z": "925440bb74efb37d",
+        "name": "",
+        "info": "",
+        "x": 360,
+        "y": 300,
         "wires": []
     }
 ]
