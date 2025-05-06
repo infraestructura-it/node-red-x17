@@ -80,6 +80,14 @@
         "env": []
     },
     {
+        "id": "8796f2781bbb0b75",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
