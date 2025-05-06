@@ -72,6 +72,14 @@
         "env": []
     },
     {
+        "id": "7e5cb6b41438341d",
+        "type": "tab",
+        "label": "Flujo 10",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
@@ -723,6 +731,54 @@
             ],
             [
                 "09abd89e7fbf3b93"
+            ]
+        ]
+    },
+    {
+        "id": "44333dc07aead469",
+        "type": "delay",
+        "z": "7e5cb6b41438341d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7e9154b6b7d9cd4",
+        "type": "trigger",
+        "z": "7e5cb6b41438341d",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "val",
+        "op2type": "val",
+        "duration": "250",
+        "extend": "false",
+        "overrideDelay": "false",
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "44333dc07aead469"
             ]
         ]
     }
