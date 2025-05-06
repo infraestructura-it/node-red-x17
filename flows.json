@@ -80,6 +80,14 @@
         "env": []
     },
     {
+        "id": "961424104f026ee3",
+        "type": "tab",
+        "label": "Flujo 11",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "8796f2781bbb0b75",
         "type": "subflow",
         "name": "Subflow 1",
@@ -791,27 +799,32 @@
         ]
     },
     {
-        "id": "1b49cf200f6a1057",
-        "type": "alexa-home",
-        "z": "7e5cb6b41438341d",
-        "devicename": "",
-        "devicetype": "Extended color light",
-        "x": 430,
-        "y": 280,
+        "id": "2049327ed28efd6f",
+        "type": "subflow:8796f2781bbb0b75",
+        "z": "961424104f026ee3",
+        "name": "",
+        "x": 200,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "31d6350ab5f678d6",
+        "type": "ui_template",
+        "z": "961424104f026ee3",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 420,
+        "y": 160,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "20dac16e9d385661",
-        "type": "alexa-home-controller",
-        "z": "7e5cb6b41438341d",
-        "controllername": "Alexa Controller",
-        "useNode": false,
-        "port": 80,
-        "maxItems": -1,
-        "x": 190,
-        "y": 180,
-        "wires": []
     }
 ]
