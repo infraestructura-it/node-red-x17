@@ -56,6 +56,14 @@
         "env": []
     },
     {
+        "id": "fae247ce8162e6b8",
+        "type": "tab",
+        "label": "Flujo 8",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "inject1",
         "type": "inject",
         "z": "4d508f5ba191f821",
@@ -579,5 +587,66 @@
         "x": 340,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "7ee8e1e52278f9dc",
+        "type": "ping",
+        "z": "fae247ce8162e6b8",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "",
+        "host": "",
+        "timer": "20",
+        "inputs": 0,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "2835a2dd4d2351db"
+            ]
+        ]
+    },
+    {
+        "id": "2835a2dd4d2351db",
+        "type": "ui_chart",
+        "z": "fae247ce8162e6b8",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1F77B4",
+            "#AEC7E8",
+            "#FF7F0E",
+            "#2CA02C",
+            "#98DF8A",
+            "#D62728",
+            "#FF9896",
+            "#9467BD",
+            "#C5B0D5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 390,
+        "y": 120,
+        "wires": [
+            []
+        ]
     }
 ]
